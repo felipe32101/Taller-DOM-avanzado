@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Cambiar un título con un botón -->
+    <section>
+        <h2 id="titulo-1">Primer titulo</h2>
+        <button id="btn-cambiar-titulo">Cambiar Título</button>
+    </section>
+
+    <!-- 2. Cambiar el color de un texto -->
+    <section>
+        <p id="texto-color">Este texto cambiará de color.</p>
+        <button id="btn-cambiar-color">Cambiar Color</button>
+    </section>
+
+    <!-- 3. Mostrar/ocultar un elemento -->
+    <section>
+        <p id="elemento-toggle">Este elemento se muestra u oculta.</p>
+        <button id="btn-toggle">Mostrar / Ocultar</button>
+    </section>
+
+    <!-- 4. Crear elementos dinámicamente -->
+    <section>
+        <button id="btn-crear-elemento">Crear Elemento</button>
+        <div id="contenedor-dinamico"></div>
+    </section>
+
+    <!-- 5. Eliminar elementos -->
+    <section>
+        <ul id="lista-eliminar">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <button id="btn-eliminar">Eliminar último</button>
+    </section>
+
+    <!-- 6. Crear una lista a partir de un array -->
+    <section>
+        <ul id="lista-array"></ul>
+    </section>
+
+    <!-- 7. Crear tarjetas a partir de objetos -->
+    <section>
+        <div id="contenedor-tarjetas"></div>
+    </section>
+
+    <!-- 8. Crear un formulario y mostrar sus datos -->
+    <section>
+        <form id="form-datos">
+            <input type="text" id="input-nombre" placeholder="Nombre" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="resultado-form"></p>
+    </section>
+
+    <!-- 9. Crear una lista de tareas -->
+    <section>
+        <input type="text" id="input-tarea" placeholder="Nueva tarea">
+        <button id="btn-agregar-tarea">Agregar Tarea</button>
+        <ul id="lista-tareas"></ul>
+    </section>
+
+    <!-- 10. Crear un CRUD completo de estudiantes -->
+    <section>
+        <h3>CRUD Estudiantes</h3>
+        <form id="form-estudiante">
+            <input type="hidden" id="estudiante-id">
+            <input type="text" id="nombre-estudiante" placeholder="Nombre" required>
+            <input type="number" id="edad-estudiante" placeholder="Edad" required>
+            <button type="submit" id="btn-guardar-estudiante">Guardar</button>
+        </form>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-estudiantes"></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
